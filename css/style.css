@@ -1,0 +1,60 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #f4f6fb;
+    line-height: 1.6;
+}
+
+/* ===== BAGIAN UMUM (Ketua) ===== */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 16px 32px;
+    background-color: #1f3864;
+    color: white;
+}
+
+.logo { font-size: 22px; }
+.menu { display: flex; gap: 24px; list-style: none; }
+.menu a { color: white; text-decoration: none; }
+.menu a:hover { text-decoration: underline; }
+
+main { max-width: 1000px; margin: 0 auto; padding: 32px 20px; }
+
+.grid-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.card img { width: 100%; border-radius: 6px; margin-bottom: 10px; }
+
+footer {
+    padding: 20px 32px;
+    text-align: center;
+    background-color: #1f3864;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .navbar { flex-direction: column; }
+    .menu { gap: 14px; }
+}
+
+/* ===== BAGIAN MAHASISWA 2 (Beranda) ===== */
+
+/* ===== BAGIAN MAHASISWA 3 (Profil dan perkuliahan) ===== */
+
+/* ===== BAGIAN MAHASISWA 4 (Kontak) ===== */
