@@ -21,8 +21,101 @@
 
     <!-- Konten utama -->
     <main>
-        <h2>Perkuliahan</h2>
-        <!-- Isi halaman dikerjakan oleh anggota yang bertugas -->
+         <h2 class="judul-bagian">Jadwal Kuliah</h2>
+    <div class="filter">
+      <button type="button" class="btn-hari aktif" data-hari="Semua">Semua</button>
+      <button type="button" class="btn-hari" data-hari="Senin">Senin</button>
+      <button type="button" class="btn-hari" data-hari="Selasa">Selasa</button>
+      <button type="button" class="btn-hari" data-hari="Rabu">Rabu</button>
+      <button type="button" class="btn-hari" data-hari="Kamis">Kamis</button>
+      <button type="button" class="btn-hari" data-hari="Jumat">Jumat</button>
+    </div>
+    <div class="bungkus-tabel">
+      <table>
+        <thead>
+          <tr><th>Hari</th><th>Jam</th><th>Mata Kuliah</th><th>Dosen</th><th>Ruang</th></tr>
+        </thead>
+        <tbody id="isi-jadwal">
+          <tr data-hari="Senin"><td>Senin</td>
+                                <td>09.00 - 10.15<br>10.20 - 11.10<br>11.15 - 12.05<br>14.40 - 15.30</td>
+                                <td>Rekayasa Perangkat Lunak<br>Pemrograman Web Dasar<br>Pemrograman Mobile<br>Jaringan Komputer</td>
+                                <td>Cahya Vikasari, S.T., M.Eng.<br>Kukuh Muhammad, M.T.<br>Ir. Fajar Mahardika, S.Kom., M.Kom.<br>Andesita Prihantara, S.T., M.Eng.</td>
+                                <td>GKB 3.5<br>GKB 3.6<br>GKB 3.7<br>GKB 4.7</td></tr>
+          <tr data-hari="Selasa"><td>Selasa</td>
+                                <td>07.30 - 11.10<br>11.15 - 15.30</td>
+                                <td>P Pemrograman Web Dasar<br>P Rekayasa Perangkat Lunak</td>
+                                <td>Kukuh Muhammad, M.T.<br>Cahya Vikasari, S.T., M.Eng.</td>
+                                <td>GKB 2.6<br>GTIL 5.7</td></tr>
+          <tr data-hari="Rabu"><td>Rabu</td>
+                                <td>07.30 - 11.10<br>13.00 - 13.50<br>13.50 - 15.30</td>
+                                <td>P Pemrograman Mobile<br>Desain Antarmuka Interaktif<br>Bahasa Inggris Teknik</td>
+                                <td>Ir. Fajar Mahardika, S.Kom., M.Kom.<br>Muhammad Abdul Muin, M.Kom.<br>Anchieta Ave Avillanova, M.Pd.</td>
+                                <td>GTIL 5.6<br>GKB 3.8<br>GKB 3.2</td></tr>
+          <tr data-hari="Kamis"><td>Kamis</td>
+                                <td>07.30 - 11.10<br>11.15 - 15.30</td>
+                                <td>P Desain Antarmuka Interaktif<br>P Jaringan Komputer</td>
+                                <td>Muhammad Abdul Muin, M.Kom.<br>Andesita Prihantara, S.T., M.Eng.</td>
+                                <td>GKB 2.6<br>GTIL 4.10</td></tr>
+          <tr data-hari="Jumat"><td>Jumat</td>
+                                <td>07.30 - 09.10<br>13.00 - 14.40</td>
+                                <td>Kewarganegaraan<br>Manajemen Risiko TI</td>
+                                <td>Farhatun Sa'diyah<br>Nur Wahyu Rahadi, S.Kom., M.Eng.</td>
+                                <td>GKB 4.3<br>GKB 4.1</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="judul-bagian">Mata Kuliah Semester Ini</h2>
+    <div class="grid-card" id="daftar-matkul">
+      <div class="card item-matkul">
+        <h3>Pemrograman Web Dasar</h3>
+        <p>1 SKS  Teori dan 3 SKS Praktikum - Kukuh Muhammad, M.T.</p>
+      </div>
+      <div class="card item-matkul">
+        <h3>Pemrograman Mobile</h3>
+        <p>1 SKS  Teori dan 3 SKS Praktikum - Ir. Fajar Mahardika, S.Kom., M.Kom.</p>
+      </div>
+      <div class="card item-matkul">
+        <h3>Jaringan Komputer</h3>
+        <p>1 SKS  Teori dan 3 SKS Praktikum - Andesita Prihantara, S.T., M.Eng.</p>
+      </div>
+      <div class="card item-matkul">
+        <h3>Desain Antarmuka Interaktif</h3>
+        <p>1 SKS  Teori dan 3 SKS Praktikum - Muhammad Abdul Muin, M.Kom</p>
+      </div>
+      <div class="card item-matkul">
+        <h3>Kewarganegaraan</h3>
+        <p>2 SKS Teori- Farhatun Sa'diyah</p>
+      </div>
+      <div class="card item-matkul">
+        <h3>Bahasa Inggris Teknik</h3>
+        <p>2 SKS Teori - Anchieta Ave Avillanova, M.Pd.</p>
+      </div>
+      <div class="card item-matkul">
+        <h3>Rekayasa Perangkat Lunak</h3> 
+        <p>1 SKS  Teori dan 3 SKS Praktikum - Cahya Vikasari, S.T., M.Eng.</p>
+      </div>
+      <div class="card item-matkul">
+        <h3>Manajemen Risiko TI</h3>
+        <p>2 SKS Teori - Nur Wahyu Rahadi, S.Kom., M.Eng.</p>
+
+      </div>
+    </div>
+
+    <h2 class="judul-bagian">Kalender Akademik</h2>
+    <div class="bungkus-tabel">
+      <table>
+        <thead>
+          <tr><th>Kegiatan</th><th>Tanggal</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ujian Tengah Semester (UTS)</td><td>26 Oktober 2026 s/d 30 Oktober 2027</td></tr>
+          <tr><td>Ujian Akhir Semester (UAS)</td><td>11 Januari 2027 s/d 15 Januari 2027</td></tr>
+          <tr><td>Pelaksanaan Kompensasi Mahasiswa</td><td>18 Januari 2027 s/d 29 Januari 2027</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
     </main>
 
     <!-- Footer -->
