@@ -112,6 +112,62 @@ th { background-color: #1f3864; color: white; }
 }
 .detail-tugas { margin-top: 10px; }
 
+/* ===== BAGIAN MAHASISWA 4 (Kontak) ===== */
+
+
+/* ===== BAGIAN MAHASISWA 4 (Kontak) ===== */
+.judul-kontak { font-size: 40px; margin: 0 0 20px; }
+
+/* Kotak informasi dosen */
+.kotak-dosen {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px 20px;
+}
+.kotak-dosen h3 { margin-bottom: 6px; color: #1f3864; }
+.input-dosen {
+  width: 30%;
+  padding: 8px 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+}
+.input-dosen::placeholder { font-size: 14px; }
+#hasil-dosen { margin-top: 12px; }
+#hasil-dosen:empty { margin-top: 0; }
+
+/* Kartu hasil dosen: judul = mata kuliah, lalu dosen, telepon, email */
+.kartu-dosen { padding: 18px 20px; }
+.matkul-dosen {
+  font-size: 17px;
+  line-height: 1.35;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e3e7ef;
+}
+.baris-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+.ikon-info {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  color: #1f3864;
+}
+.baris-info a { color: inherit; text-decoration: none; word-break: break-all; }
+.baris-info a:hover { text-decoration: underline; }
+
+/* Kontak kelas */
+.kontak-kelas { margin-top: 170px; }
+.kontak-kelas h3 { margin-bottom: 6px; color: #1f3864; }
 body.gelap .blok { background-color: #1c2538; border-color: #33415c; }
 body.gelap .blok h3 { color: #9db8f0; }
 body.gelap table { background-color: #1c2538; }
