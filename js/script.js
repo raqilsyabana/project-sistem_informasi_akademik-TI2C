@@ -29,7 +29,7 @@ function tampilkanDosen(daftar) {
     kartu.className = "card kartu-dosen";
     kartu.innerHTML =
       '<h3 class="matkul-dosen">' + dosen.matkul + "</h3>" +
-      '<p class="baris-info baris-nama">' + dosen.nama + "</span></p>" +
+      '<p class="baris-info baris-nama">' + dosen.nama + "</p>" +
       '<p class="baris-info">' + '<a href="tel:' + dosen.telepon + '">' + dosen.telepon + "</a></p>" +
       '<p class="baris-info">' + '<a href="mailto:' + dosen.email + '">' + dosen.email + "</a></p>";
     hasilDosen.appendChild(kartu);
