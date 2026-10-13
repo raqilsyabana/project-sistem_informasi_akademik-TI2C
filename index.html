@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
+<head> <!-- menyimpan informasi meta pengaturan viewport agar responsif dan menghubungkan css extrernal -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beranda | Website Kelas</title>
     <link rel="stylesheet" href="css/style.css" />
-</head>
+</head> 
 <body>
     <!-- Navbar -->
-    <header class="navbar">
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Beranda</a></li>
+    <header class="navbar"> <!-- membuat navigasi bar dengan menu: halaman beranda, profil, perkuliahan, kontak -->
+        <nav> <!-- membungkus daftar menu -->
+            <ul class="menu"> <!-- unordered list -->
+                <li><a href="index.html">Beranda</a></li> <!-- list item -->
                 <li><a href="profil.html">Profil</a></li>
                 <li><a href="perkuliahan.html">Perkuliahan</a></li>
                 <li><a href="kontak.html">Kontak</a></li>
@@ -20,19 +20,19 @@
     </header>
 
     <!-- Konten utama -->
-    <main>
+    <main> <!-- membungkus seluruh konten utama website agar tersusun rapi, memisahkan bagian konten utama dari header dan footer -->
         <!-- Hero Section / Sambutan -->
-    <section class="hero">
+    <section class="hero"> <!-- membungkus keseluruhan konten utama (kotak biru) berisi judul, deskripsi singkat, tombol "Mulai Jelajahi" -->
         <div class="hero-content">
-            <h1>Selamat Datang di Website Kelas TI-2C</h1>
-            <p>Program Studi Teknik Informatika - Politeknik Negeri Cilacap</p>
+            <h1>Selamat Datang di Website Kelas TI-2C</h1> <!-- judul -->
+            <p>Program Studi Teknik Informatika - Politeknik Negeri Cilacap</p> <!-- teks deskripsi -->
             <p><em>"Membangun Logika, Menciptakan Inovasi"</em></p>
-            <a href="profil.html" class="btn-primary">Mulai Jelajahi</a>
+            <a href="profil.html" class="btn-primary">Mulai Jelajahi</a> <!-- link -->
         </div>
     </section>
 
     <!-- Fitur Cepat (Cards) -->
-    <section class="fitur-kelas">
+    <section class="fitur-kelas"> <!-- berisi tiga kartu informasi dibuat menggunakan div dengan class card -->
         <div class="card">
             <h3>Info Perkuliahan</h3>
             <p>Akses cepat ke jadwal mata kuliah, materi dosen, dan deadline tugas minggu ini.</p>
@@ -51,7 +51,7 @@
     </section>
 
     <!-- Pengumuman Terbaru -->
-    <section class="pengumuman">
+    <section class="pengumuman"> <!-- menampilkan daftar pengumuman terbaru beserta tanggalnya -->
         <h2>Pengumuman Terbaru</h2>
         <div class="list-pengumuman">
             <article class="item-pengumuman">
@@ -68,10 +68,10 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer> <!-- menampilkan teks hak cipta -->
         <p>&copy; 2026 Kelas TI-2C Politeknik Negeri Cilacap</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- memuat file javascript eksternal -->
 </body>
 </html>

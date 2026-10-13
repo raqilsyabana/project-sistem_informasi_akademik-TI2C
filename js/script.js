@@ -1,11 +1,17 @@
 // ===== BAGIAN MAHASISWA 2 (Beranda) =====
-// Pastikan semua elemen HTML (DOM) sudah dimuat sebelum menjalankan script
+// pastikan semua elemen HTML (DOM) sudah dimuat sebelum menjalankan script
+// pembungkus utama yang krusial
+// fungsinya menahan eksekusi script sampai seluruh elemen HTML selesai dimuat oleh browser
 document.addEventListener('DOMContentLoaded', function() {
     
     /* 1. Sapaan Dinamis Berdasarkan Waktu */
     const heroTitle = document.querySelector('.hero-content h1');
     
+    // mengambil waktu (jam) saat ini menggunakan new Date().getHours(). 
+    // jika dibuka pagi hari, teks judul otomatis berubah menjadi "Selamat Pagi", begitu pula untuk Siang, Sore, dan Malam
     if (heroTitle) {
+        // logika ini mengambil jam lokal dari sistem pengguna
+        // menggunakan struktur percabangan if...else if, skrip mengecek nilai jam
         const jam = new Date().getHours();
         let sapaan = 'Selamat Datang';
 
@@ -19,17 +25,21 @@ document.addEventListener('DOMContentLoaded', function() {
             sapaan = 'Selamat Malam';
         }
 
-        // Mengubah teks h1 pada hero section
+        // mengubah teks h1 pada hero section
         heroTitle.textContent = `${sapaan} di Website Kelas TI-2C`;
     }
 
     /* 2. Penanda Menu Navigasi Aktif (Active Link) */
-    // Mengambil URL halaman yang sedang dibuka
+    // mengambil URL halaman yang sedang dibuka
+    // script akan mengecek URL halaman yang sedang dibuka (window.location.href)
+    // jika cocok dengan salah satu tautan menu di Navbar, tautan tersebut akan diberi class active (biasanya untuk memberikan efek warna berbeda agar pengguna tahu sedang berada di halaman mana) 
     const currentLocation = window.location.href;
     const menuItems = document.querySelectorAll('.menu a');
-
-    menuItems.forEach(item => {
-        // Jika URL pada link sama dengan URL halaman saat ini, tambahkan class 'active'
+    // perulangan (forEach) pada setiap tautan menu (.menu a)
+    menuItems.forEach (item => {
+        // jika URL pada link sama dengan URL halaman saat ini, tambahkan class 'active'
+        // jika href dari tautan tersebut cocok dengan URL saat ini
+        // class CSS bernama active akan ditambahkan ke tautan tersebut menggunakan item.classList.add('active') 
         if (item.href === currentLocation) {
             item.classList.add('active');
         }
@@ -39,8 +49,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const tombolMulai = document.querySelector('.btn-primary');
     
     if (tombolMulai) {
+        // menambahkan pendengar kejadian (addEventListener) pada tombol "Mulai Jelajahi". 
+        // saat diklik tombol tersebut akan mencetak pesan "Mengarahkan ke halaman Profil Kelas..." di dalam console browser
         tombolMulai.addEventListener('click', function() {
-            // Menampilkan pesan di console browser saat tombol diklik
+            // menampilkan pesan di console browser saat tombol diklik
             console.log('Mengarahkan ke halaman Profil Kelas...');
         });
     }

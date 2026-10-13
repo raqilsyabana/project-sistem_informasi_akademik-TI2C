@@ -1,5 +1,9 @@
+/* menghilangkan margin bawaan (margin: 0; padding: 0;) */
+/* tanda bintang * memilih semua elemen untuk menghilangkan margin dan padding bawaan browser */
+/* box-sizing: border-box memastikan penambahan padding tidak akan mengubah lebar total elemen
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* mengatur jenis huruf Arial serta warna latar belakang abu-abu terang (#f4f6fb) */
 body {
     font-family: Arial, sans-serif;
     color: #222;
@@ -8,6 +12,8 @@ body {
 }
 
 /* ===== BAGIAN UMUM (Ketua) ===== */
+/* menggunakan Flexbox (display: flex;) agar menu berjejer rapi secara horizontal */
+/* keduanya diberi warna latar biru gelap (#1f3864) untuk navbar dan footer serta teks putih */
 .navbar {
     display: flex;
     justify-content: center;
@@ -48,6 +54,11 @@ footer {
     color: white;
 }
 
+/* kode ini membuat website menjadi responsif (responsive web design) */
+/* jika lebar layar perangkat 600px atau lebih kecil (seperti smartphone) */ 
+/* maka orientasi flexbox pada navbar diubah menjadi flex-direction: column */ 
+/* sehingga menu akan tersusun dari atas ke bawah */
+/* menu navbar akan tersusun ke bawah (vertikal) */
 @media (max-width: 600px) {
     .navbar { flex-direction: column; }
     .menu { gap: 14px; }
@@ -64,6 +75,8 @@ main {
 
 /* Hero Section */
 .hero {
+    /* memberikan warna biru terang (#0056b3) pada kotak sambutan untuk hero section dan aksen garis pengumuman */ 
+    /* warna kuning (#ffc107) pada tombol untuk membuatnya menonjol */
     background-color: #0056b3;
     color: white;
     text-align: center;
@@ -88,6 +101,9 @@ main {
 }
 
 /* Fitur Kelas (Cards) */
+/* membagi ruang secara rata menggunakan flexbox (flex: 1;) agar ketiga kartu tampil sejajar */ 
+/* gap memberi jarak antar kartu sebesar 20px */
+/* kartu diberi kotak putih dengan batas garis tipis */
 .fitur-kelas {
     display: flex;
     gap: 20px;
@@ -116,6 +132,8 @@ main {
 }
 
 /* Pengumuman */
+/* diberi efek bayangan tipis melayang dari background(box-shadow) */ 
+/* garis tebal berwarna biru di sisi kiri (border-left: 5px solid #0056b3;) sebagai penanda visual */
 .pengumuman {
     background: #fff;
     padding: 20px;
