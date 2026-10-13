@@ -83,7 +83,7 @@ tombolHari.forEach(function (tombol) {
 });
 
 // ===== BAGIAN MAHASISWA 4 (Kontak) =====
-// 1. Data dosen (ganti dengan data dosen TI 2C yang asli)
+// 1. Data dosen
 const dataDosen = [
   { nama: "Kukuh Muhammad, M.T.", matkul: "Pemrograman Web Dasar", telepon: "0812-0000-0001", email: "kukuh@pnc.ac.id" },
   { nama: "Anchieta Ave Avillanova, M.Pd", matkul: "Bahasa Inggris Teknik", telepon: "0812-0000-0002", email: "avi@pnc.ac.id" },
@@ -109,7 +109,7 @@ function tampilkanDosen(daftar) {
     kartu.className = "card kartu-dosen";
     kartu.innerHTML =
       '<h3 class="matkul-dosen">' + dosen.matkul + "</h3>" +
-      '<p class="baris-info baris-nama">' + dosen.nama + "</span></p>" +
+      '<p class="baris-info baris-nama">' + dosen.nama + "</p>" +
       '<p class="baris-info">' + '<a href="tel:' + dosen.telepon + '">' + dosen.telepon + "</a></p>" +
       '<p class="baris-info">' + '<a href="mailto:' + dosen.email + '">' + dosen.email + "</a></p>";
     hasilDosen.appendChild(kartu);
