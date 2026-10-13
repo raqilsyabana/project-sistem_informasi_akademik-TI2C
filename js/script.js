@@ -3,7 +3,7 @@
 // ===== BAGIAN MAHASISWA 3 (Profil dan perkuliahan) =====
 
 // ===== BAGIAN MAHASISWA 4 (Kontak) =====
-// 1. Data dosen (ganti dengan data dosen TI 2C yang asli)
+// 1. Data dosen
 const dataDosen = [
   { nama: "Kukuh Muhammad, M.T.", matkul: "Pemrograman Web Dasar", telepon: "0812-0000-0001", email: "kukuh@pnc.ac.id" },
   { nama: "Anchieta Ave Avillanova, M.Pd", matkul: "Bahasa Inggris Teknik", telepon: "0812-0000-0002", email: "avi@pnc.ac.id" },
