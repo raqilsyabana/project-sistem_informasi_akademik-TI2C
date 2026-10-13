@@ -1,5 +1,9 @@
+/* menghilangkan margin bawaan (margin: 0; padding: 0;) */
+/* tanda bintang * memilih semua elemen untuk menghilangkan margin dan padding bawaan browser */
+/* box-sizing: border-box memastikan penambahan padding tidak akan mengubah lebar total elemen
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* mengatur jenis huruf Arial serta warna latar belakang abu-abu terang (#f4f6fb) */
 body {
     font-family: Arial, sans-serif;
     color: #222;
@@ -8,6 +12,8 @@ body {
 }
 
 /* ===== BAGIAN UMUM (Ketua) ===== */
+/* menggunakan Flexbox (display: flex;) agar menu berjejer rapi secara horizontal */
+/* keduanya diberi warna latar biru gelap (#1f3864) untuk navbar dan footer serta teks putih */
 .navbar {
     display: flex;
     justify-content: center;
@@ -48,12 +54,109 @@ footer {
     color: white;
 }
 
+/* kode ini membuat website menjadi responsif (responsive web design) */
+/* jika lebar layar perangkat 600px atau lebih kecil (seperti smartphone) */ 
+/* maka orientasi flexbox pada navbar diubah menjadi flex-direction: column */ 
+/* sehingga menu akan tersusun dari atas ke bawah */
+/* menu navbar akan tersusun ke bawah (vertikal) */
 @media (max-width: 600px) {
     .navbar { flex-direction: column; }
     .menu { gap: 14px; }
 }
 
 /* ===== BAGIAN MAHASISWA 2 (Beranda) ===== */
+/* Styling untuk Main Content */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    /* memberikan warna biru terang (#0056b3) pada kotak sambutan untuk hero section dan aksen garis pengumuman */ 
+    /* warna kuning (#ffc107) pada tombol untuk membuatnya menonjol */
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Fitur Kelas (Cards) */
+/* membagi ruang secara rata menggunakan flexbox (flex: 1;) agar ketiga kartu tampil sejajar */ 
+/* gap memberi jarak antar kartu sebesar 20px */
+/* kartu diberi kotak putih dengan batas garis tipis */
+.fitur-kelas {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.card {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #333;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Pengumuman */
+/* diberi efek bayangan tipis melayang dari background(box-shadow) */ 
+/* garis tebal berwarna biru di sisi kiri (border-left: 5px solid #0056b3;) sebagai penanda visual */
+.pengumuman {
+    background: #fff;
+    padding: 20px;
+    border-left: 5px solid #0056b3;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.list-pengumuman {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.item-pengumuman .tanggal {
+    font-size: 0.85em;
+    color: #666;
+    font-weight: bold;
+}
+
+.item-pengumuman h4 {
+    margin: 5px 0;
+}
 
 /* ===== BAGIAN MAHASISWA 3 (Profil dan perkuliahan) ===== */
 .blok {
